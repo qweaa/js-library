@@ -1,15 +1,33 @@
 <template>
-  <h1>我是APP PAGE</h1>
+  <div>
+    <p>
+      <router-link to="/">to home</router-link>
+    </p>
+    <p>
+      <router-link to="/example">to example</router-link>
+    </p>
+  </div>
+  <router-view></router-view>
 </template>
 
 <script>
 export default {
-  name: "App"
-}
+  name: "App",
+  components: {
+  },
+  mounted() {
+    console.info("abd");
+  }
+};
 </script>
 
-<style scoped lang="scss">
-  h1{
-    background: #aabb11;
-  }
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

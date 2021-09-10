@@ -13,9 +13,17 @@ module.exports = merge(common, {
     index: './demo/index.js'
   },
   output: {
-    filename: 'js/[name].js',
+    filename: 'js/[name].[contenthash].js',
     path: path.join(__dirname, '../demo/dist'),
+    publicPath: './',
     clean: true
+  },
+  resolve: {
+    alias: {
+      '@': '/demo/assets/',
+      '~': '/demo/component/',
+      'pages': '/demo/pages/'
+    }
   },
   module: {
     rules: [{

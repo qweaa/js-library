@@ -1,4 +1,5 @@
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const {
   merge
 } = require('webpack-merge');
@@ -15,5 +16,22 @@ module.exports = merge(common, {
       name: 'xfzhUtils',
       type: 'umd',
     },
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin({
+      extractComments: false,
+      terserOptions: {
+        // 删除注释
+        output: {
+          comments: false
+        },
+        // 删除console
+        compress: {
+          warnings: false,
+          drop_console: true, //console
+        }
+      }
+    })],
   },
 });
