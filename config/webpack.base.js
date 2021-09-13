@@ -1,7 +1,8 @@
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
-  stats: 'errors-only',
+  stats: 'minimal',
   module: {
     rules: [{
       test: /\.m?js$/,
@@ -15,4 +16,7 @@ module.exports = {
       }
     }]
   },
+  plugins: [
+    new FriendlyErrorsWebpackPlugin(),
+  ]
 }

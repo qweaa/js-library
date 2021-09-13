@@ -1,10 +1,10 @@
 <template>
   <div>
     <p>
-      <router-link to="/">to home</router-link>
+      <router-link to="/">go to home</router-link>
     </p>
     <p>
-      <router-link to="/example">to example</router-link>
+      <router-link to="/example">go to example</router-link>
     </p>
   </div>
   <router-view></router-view>

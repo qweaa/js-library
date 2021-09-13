@@ -10,6 +10,6 @@ module.exports = merge(dist, {
     port: 8090,
     open: true,
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
 });
