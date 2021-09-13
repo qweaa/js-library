@@ -1,6 +1,7 @@
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
+  stats: 'errors-only',
   module: {
     rules: [{
       test: /\.m?js$/,

@@ -15,7 +15,6 @@ module.exports = merge(common, {
   output: {
     filename: 'js/[name].[contenthash].js',
     path: path.join(__dirname, '../demo/dist'),
-    publicPath: './',
     clean: true
   },
   resolve: {

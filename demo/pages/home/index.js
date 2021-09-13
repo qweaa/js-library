@@ -6,7 +6,7 @@ export default {
   },
   data() {
     return {
-      title: 'hello world',
+      title: 'hello home page',
       logo,
     }
   },
