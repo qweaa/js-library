@@ -1,4 +1,3 @@
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
@@ -16,7 +15,4 @@ module.exports = {
       }
     }]
   },
-  plugins: [
-    new FriendlyErrorsWebpackPlugin(),
-  ]
 }

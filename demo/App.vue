@@ -16,7 +16,7 @@ export default {
   components: {
   },
   mounted() {
-    console.info("abd");
+    console.info("app");
   }
 };
 </script>
