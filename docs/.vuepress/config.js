@@ -21,9 +21,15 @@ module.exports = {
         link: '/docs.html',
       },
     ],
-  },
-
-  git: {
     contributors: false,
+    lastUpdatedText: '上次更新',
+    // 404 page
+    notFound: [
+      '这里什么都没有',
+      '我们怎么到这来了？',
+      '这是一个 404 页面',
+      '看起来我们进入了错误的链接',
+    ],
+    backToHome: '返回首页',
   },
 }
