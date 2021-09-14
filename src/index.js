@@ -1,6 +1,6 @@
 // example
 const hello = (name) => {
-  alert(`hello ${name}`);
+  window.console.info(`hello ${name}`);
 }
 
 module.exports = {

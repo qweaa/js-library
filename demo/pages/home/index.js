@@ -11,6 +11,6 @@ export default {
     }
   },
   mounted() {
-    console.log('home page')
+    console.log('home page');
   }
 }
