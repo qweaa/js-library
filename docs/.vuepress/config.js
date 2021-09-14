@@ -14,8 +14,16 @@ module.exports = {
       },
       {
         text: '快速开始',
-        link: '/usage',
+        link: '/usage.html',
+      },
+      {
+        text: '文档部署',
+        link: '/docs.html',
       },
     ],
+  },
+
+  git: {
+    contributors: false,
   },
 }
