@@ -6,7 +6,9 @@
   "scripts": {
     "dist": "webpack --config config/webpack.dist.js",
     "demo": "webpack serve --host local-ip --config config/webpack.demo.js",
-    "build": "webpack --config config/webpack.build.js"
+    "build": "webpack --config config/webpack.build.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,7 @@
     "utf-8-validate": "^5.0.5",
     "vue-loader": "^16.5.0",
     "vue-router": "^4.0.11",
+    "vuepress": "^2.0.0-beta.26",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.0",
